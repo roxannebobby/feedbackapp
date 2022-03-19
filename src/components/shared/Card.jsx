@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Card({children, reverse}) {
   // this is a conditional CLASS
@@ -16,4 +17,12 @@ function Card({children, reverse}) {
   // )
 }
 
+Card.defaultProps = {
+  reverse: false,
+}
+
+Card.propTypes = {
+  children: PropTypes.node.isRequired,
+  reverse: PropTypes.bool,
+}
 export default Card
