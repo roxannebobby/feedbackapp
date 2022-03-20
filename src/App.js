@@ -44,10 +44,10 @@ function App(handleDelete) {
 							</>
 						}
 					></Route>
-					<Route path='/about' selement={<AboutScreen />} />
+					<Route path='/about' element={<AboutScreen />}></Route>
 				</Routes>
-
 				<AboutIconLink />
+				
 			</div>
 		</Router>
 	);
