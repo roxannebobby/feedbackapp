@@ -7,6 +7,7 @@ import FeedbackData from './data/FeedbackData';
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackForm from './components/FeedbackForm';
 import AboutScreen from './screens/AboutScreen';
+import AboutIconLink from "./components/AboutIconLink";
 
 function App(handleDelete) {
 	const [feedback, setFeedback] = useState(FeedbackData);
@@ -45,6 +46,8 @@ function App(handleDelete) {
 					></Route>
 					<Route path='/about' selement={<AboutScreen />} />
 				</Routes>
+
+				<AboutIconLink />
 			</div>
 		</Router>
 	);
